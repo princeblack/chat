@@ -1,0 +1,195 @@
+*,
+html,
+body {
+  box-sizing: border-box;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(1px + 2vmin);
+  color: white;
+}
+.Header-title {
+  background: linear-gradient(#765675, #a08871);
+  font-size: 20px;
+}
+.Section-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+/*****************************************************************
+******************************************************************
+************************* chat container section ******************
+******************************************************************
+*****************************************************************/
+.Chat-container {
+  box-sizing: border-box;
+  margin: 0px;
+  width: 100%;
+  min-height: 70vh;
+  max-height: 75vh;
+  background-color: #352c46;
+  overflow: hidden;
+  overflow-y: auto;
+}
+.chat-box {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+/*****************************************************************
+******************************************************************
+************************* my message section ******************
+******************************************************************
+*****************************************************************/
+.iAmUsertrue {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+.msgtimer {
+  color: rgb(219, 210, 210);
+  font-size: 10px;
+  letter-spacing: 0;
+}
+.iAmUsertrue img {
+  width: 50px;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+.msg-container {
+  margin-left: 10px;
+  min-height: 50px;
+  min-width: 40px;
+  list-style-type: none;
+  box-sizing: border-box;
+  border-top-right-radius: 1.3em;
+  border-top-left-radius: 1.3em;
+  border-bottom-left-radius: 1.3em;
+  border-bottom-right-radius: 1.3em;
+  background-attachment: fixed;
+  background-color: #222222;
+  display: flex;
+  align-items: center;
+}
+.message {
+  color: #ffffff;
+  font-size: 13px;
+  overflow-wrap: break-word;
+  max-width: 300px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: left;
+}
+
+/*****************************************************************
+******************************************************************
+************************* friend message section******************
+******************************************************************
+*****************************************************************/
+
+.iAmMyFriend {
+  display: flex;
+  padding: 0;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+}
+.iAmMyFriend img {
+  width: 50px;
+}
+.friend-msg-container {
+  margin-left: 10px;
+  margin-right: 10px;
+  min-height: 50px;
+  min-width: 40px;
+  list-style-type: none;
+  box-sizing: border-box;
+  border-top-right-radius: 1.3em;
+  border-top-left-radius: 1.3em;
+  border-bottom-left-radius: 1.3em;
+  border-bottom-right-radius: 1.3em;
+  background-attachment: fixed;
+  background-color: #9573BC;
+  display: flex;
+  align-items: center;
+}
+/*****************************************************************
+******************************************************************
+************************* ******************
+******************************************************************
+*****************************************************************/
+.User-container {
+  width: 50%;
+  min-height: 15vh;
+  text-align: center;
+  background-color: rgb(17, 5, 39);
+  display: flex;
+  flex-direction: column;
+}
+.UserForm {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 15px;
+  text-align: center;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.UserInput {
+  width: 80%;
+  height: 20px;
+  border-radius: 50px;
+  background-color: rgba(56, 53, 56, 0.712);
+  color: rgb(253, 253, 253);
+}
+.SubmitButton {
+  width: 15%;
+  margin-left: 10px;
+  color: #9573bc;
+  background-color: rgba(56, 53, 56, 0.712);
+  border-radius: 50px;
+}
+.UserSection {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.show {
+  height: 30px;
+  margin-right: 10px;
+  background-color: #9573bc;
+  border-radius: 50px;
+}
+.hidden {
+  height: 30px;
+  color: #9573bc;
+  background-color: rgba(56, 53, 56, 0.712);
+  border-radius: 50px;
+  margin-right: 10px;
+}
+.hidden:focus,
+.show:focus,
+.SubmitButton:focus,
+.UserInput:focus {
+  outline: none;
+}
+
+.Image-container {
+  width: 50%;
+  height: 95vh;
+  background-image: url("../src/images/maarten.png");
+  background-size: cover;
+}
+.App-link {
+  color: #61dafb;
+}
