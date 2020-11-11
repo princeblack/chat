@@ -25,8 +25,7 @@ class MainContainer extends React.Component {
         }  
     }
     render(){  
-      const messageContainer = document.querySelector('.Chat-container');
-      messageContainer.scrollTop= messageContainer.scrollHeight
+    
         return (
             <div className="App">
             <header className="App-header">
