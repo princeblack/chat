@@ -19,14 +19,14 @@ class MainContainer extends React.Component {
 
         const time = today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds();   
         if (this.state.messages) {
-            console.log(this.state.messages);
-            
             this.setState({
                 messages:[...this.state.messages, { message: xe.value, time: time, button: xe.myChat, id: number}]
             })
-        }   
+        }  
     }
-    render(){        
+    render(){  
+      const messageContainer = document.querySelector('.Chat-container');
+      messageContainer.scrollTop= messageContainer.scrollHeight
         return (
             <div className="App">
             <header className="App-header">

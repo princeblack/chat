@@ -11,8 +11,16 @@ class FormContainer extends React.Component {
   };
   handleSubmit = event => {
     event.preventDefault();
-    this.props.message(this.state);
+    if (this.state.value.length > 0 ) {
+      this.props.message(this.state);
     this.setState({ value: "" });
+    const messageContainer = document.querySelector('.Chat-container');
+  // messageContainer.scrollTop= messageContainer.scrollHeight 
+  // messageContainer.scrollTop = messageContainer.scrollHeight - messageContainer.clientHeight;
+  // console.log(messageContainer.scrollTop);
+  // console.log(messageContainer.scrollHeight);
+    }
+    
   };
   handleClik = () => {
     this.setState({ myChat: false });
