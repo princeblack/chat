@@ -3,7 +3,9 @@ html,
 body {
   box-sizing: border-box;
 }
-
+.App{
+  min-width: 280px;
+}
 .App-header {
   background-color: #282c34;
   min-height: 5vh;
@@ -147,7 +149,7 @@ body {
 }
 .UserInput {
   width: 80%;
-  height: 20px;
+  height: 35px;
   border-radius: 50px;
   background-color: rgba(56, 53, 56, 0.712);
   color: rgb(253, 253, 253);
@@ -193,3 +195,37 @@ body {
 .App-link {
   color: #61dafb;
 }
+
+@media only screen and (max-width: 700px){
+
+  .User-container{
+    position: absolute;
+    min-width:  280px;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    transition: all 1s ease-in-out;
+  }
+  .UserForm{
+    display: flex;
+    flex-direction: column;
+  }
+  .UserInput{
+    width: 100%;
+  }
+  .SubmitButton{
+    margin-top:10px;
+    width: 50%;
+    padding: 10px
+  }
+  .Image-container{
+    width: 100%;
+    min-width:  280px;
+  }
+  .UserSection{
+    padding: 5px;
+  }
+  .UserSection button{
+    margin-bottom: 10px;
+  }
+} 
